@@ -17,6 +17,8 @@ RUN rpm -i /tmp/epel-release-latest-8.noarch.rpm && \
   python3 -m pip install --upgrade pip && \
   pip3 --trusted-host pypi.org --trusted-host files.pythonhosted.org install jmespath && \  
   pip3 --trusted-host pypi.org --trusted-host files.pythonhosted.org install ansible && \
+  pip3 --trusted-host pypi.org --trusted-host files.pythonhosted.org install openshift && \
+  pip3 --trusted-host pypi.org --trusted-host files.pythonhosted.org install pyyaml && \
   rm -f /tmp/*.rpm
  
 ENV ANSIBLE_GATHERING=smart \
